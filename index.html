@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador de Caracteres</title>
+</head>
+<body>
+    <h1>Contador de caracteres</h1>
+
+<form name="form_main">
+  <fieldset>
+    <legend>Contador</legend>
+    <label for="text">Texto:</label> <br>
+
+    <!-- textarea usado para colocar um campo para texto, ligado a função on input, quando o usuário digita 
+    algo, ele imediatamente reconhece  -->
+    <textarea name="text" id="text" cols="30" rows="10" oninput="contadorCaractere()">
+    </textarea><br>
+    <label for="caracteres">Caracteres: </label>
+    <span id="caracteres"></span><br>
+    <label for="palavras">Palavras: </label>
+    <span id="palavras"></span><br>
+    <label for="linhas">Linhas: </label>
+    <span id="linhas"></span><br>
+  </fieldset>
+  
+</form>
+</body>
+<script src="script.js"></script>
+</html>
+
